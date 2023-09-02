@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo 1"></p>
+    <p id="demo 2"></p>
+    <p id="demo 3"> iam a good girl</p>
+    <p id="demo 4"></p>
+    <script>
+        let text="ABCDEFGHIJKLMN";
+        let part = text.slice( 4,9);
+        let str = "Apple, Banana, Kiwi";
+        document.getElementById("demo").innerHTML = text.length;
+        document.getElementById("demo 1").innerHTML = part;
+        document.getElementById("demo 2").innerHTML = str.substring ( 7, 13);
+        function myFunction() {
+            let text = document.getElementById("demo 3").innerHTML;
+         document.getElementById("demo 4").innerHTML =  text.replace("good", "bad"); 
+        }
+    </script>
+    
+</body>
+</html>
